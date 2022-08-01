@@ -15,7 +15,7 @@ class Body extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(
               children: [
-                SizedBox(height: SizeConfig.screenHeight * 0.04), // 4%
+                SizedBox(height: SizeConfig.screenHeight * 0.04),
                 Text("Create Account", style: headingStyle),
                 Text(
                   "Create an account to get all features",

@@ -60,7 +60,7 @@ class _SignFormState extends State<SignForm> {
             height: getProportionateScreenHeight(20),
           ),
           DefaultButton(
-            text: "LOGIN",
+            text: "Login",
             press: () {
               if (_formkey.currentState!.validate()) {
                 _formkey.currentState!.save();

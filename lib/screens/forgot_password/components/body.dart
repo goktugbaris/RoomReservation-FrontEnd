@@ -98,7 +98,7 @@ class _ForgotPassFormState extends State<ForgotPassForm> {
           FormError(errors: errors),
           SizedBox(height: SizeConfig.screenHeight * 0.1),
           DefaultButton(
-            text: "RESET PASSWORD",
+            text: "Reset Password",
             press: () {
               if (_formKey.currentState!.validate()) {
               }

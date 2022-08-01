@@ -1,5 +1,4 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:room_reservation/constants.dart';
 import 'package:room_reservation/screens/sign_in/sign_in_screen.dart';
@@ -101,7 +100,7 @@ class _BodyState extends State<Body> {
   }
 
    startTimer() async {
-    var duration = Duration(seconds:2);
+    var duration = Duration(seconds:1);
     return Timer(duration, (route));
    }
    route (){
