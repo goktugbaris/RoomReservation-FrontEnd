@@ -1,0 +1,48 @@
+import 'package:flutter/material.dart';
+import 'package:room_reservation/screens/sign_in/components/sign_form.dart';
+import 'package:room_reservation/size_config.dart';
+
+import '../../../components/no_account_text.dart';
+
+class Body extends StatelessWidget {
+  const Body({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+        child: SizedBox(
+      width: double.infinity,
+      child: Padding(
+        padding:
+            EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(20)),
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Text(
+                "Welcome Back",
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: getProportionateScreenWidth(28),
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Text(
+                "Sign in with your email and password",
+                textAlign: TextAlign.center,
+              ),
+              SizedBox(height: SizeConfig.screenHeight * 0.04,),
+              SignForm(),
+              SizedBox(height: SizeConfig.screenHeight * 0.08,),
+              NoAccountText(),
+            ],
+          ),
+        ),
+      ),
+    ));
+  }
+}
+
+
+
+
+
