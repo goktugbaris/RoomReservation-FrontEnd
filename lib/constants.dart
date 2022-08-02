@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'size_config.dart';
 
-const kPrimaryColor = Color(0xFFFF7643);
+
+//API URL
+const String BASE_URL = "localhost:44318/";
+
+const kPrimaryColor = Color(0xFFFF7643); // 0xFF7EC342
 const kPrimaryLightColor = Color(0xFFFFECDF);
 const kPrimaryGradientColor = LinearGradient(
   begin: Alignment.topLeft,

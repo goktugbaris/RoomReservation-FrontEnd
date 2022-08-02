@@ -34,4 +34,9 @@ class Room {
       "IsHome": this.IsHome,
     };
   }
+  static List<Room> roomsToList(List roomsToList) {
+    return roomsToList.map((data) {
+      return Room.fromJson(data);
+    }).toList();
+  }
 }

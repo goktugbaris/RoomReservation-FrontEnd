@@ -38,4 +38,9 @@ class Employee {
       "DepartmentId": this.DepartmentId
     };
   }
+  static List<Employee> employeesToList(List employeesToList) {
+    return employeesToList.map((data) {
+      return Employee.fromJson(data);
+    }).toList();
+  }
 }

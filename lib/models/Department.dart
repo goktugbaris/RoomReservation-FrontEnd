@@ -16,4 +16,9 @@ class Department{
       "OrganizationId": this.OrganizationId,
     };
   }
+  static List<Department> departmentsToList(List departmentToList) {
+    return departmentToList.map((data) {
+      return Department.fromJson(data);
+    }).toList();
+  }
 }

@@ -13,4 +13,9 @@ class Organization{
       "OrganizationName": this.OrganizationName,
     };
   }
+  static List<Organization> organizationsToList(List organizationToList) {
+    return organizationToList.map((data) {
+      return Organization.fromJson(data);
+    }).toList();
+  }
 }

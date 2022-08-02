@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:room_reservation/screens/forgot_password/forgot_password_screen.dart';
+import 'package:room_reservation/screens/home/home_screen.dart';
 
 import '../../../components/custom_surfix_icon.dart';
 import '../../../components/default_button.dart';
@@ -67,6 +68,12 @@ class _SignFormState extends State<SignForm> {
               }
             },
           ),
+          GestureDetector(
+              onTap: () => Navigator.pushNamed(context, HomeScreen.routeName),
+              child: Text(
+                "Home",
+                style: TextStyle(decoration: TextDecoration.underline),
+              ))
         ],
       ),
     );

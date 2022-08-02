@@ -50,4 +50,9 @@ class RoomBooking {
       "StartTime": this.StartTime,
     };
   }
+  static List<RoomBooking> roomBookingsToList(List roomBookingsToList) {
+    return roomBookingsToList.map((data) {
+      return RoomBooking.fromJson(data);
+    }).toList();
+  }
 }
